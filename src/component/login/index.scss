@@ -1,0 +1,48 @@
+.login {
+  .login-form-button {
+    width: 100%;
+    letter-spacing: 1px;
+  }
+  .dot {
+    margin-left: 1px;
+    position: relative;
+    @keyframes beat {
+      0% {
+        top: 0px;
+      }
+      25% {
+        top: -2px;
+      }
+      50% {
+        top: 0px;
+      }
+      100% {
+        top: 0px;
+      }
+    }
+    &:nth-of-type(1) {
+      animation: beat 0.8s infinite 0.1s;
+    }
+    &:nth-of-type(2) {
+      animation: beat 0.8s infinite 0.2s;
+    }
+    &:nth-of-type(3) {
+      animation: beat 0.8s infinite 0.3s;
+    }
+  }
+  .form-last-item {
+    margin: 0;
+  }
+  .logWay {
+    @include flex(space-between, center);
+    > div {
+      display: flex;
+      button {
+        font-size: 16px;
+        &:nth-child(n + 2) {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}

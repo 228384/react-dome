@@ -1,0 +1,39 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  .sider {
+    position: fixed;
+    z-index: 10;
+    width: 0;
+    height: 100vh;
+    background-color: #aee;
+    transition: width 200ms ease-in-out;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    background-color: #aae;
+    transition: width 200ms ease-in-out;
+  }
+  .main {
+    padding-top: 64px;
+    > div:nth-child(1) {
+      min-height: calc(100vh - 164px);
+    }
+  }
+}
+.lg {
+  .sider {
+    width: 200px;
+  }
+  .header {
+    width: calc(100% - 200px);
+  }
+  .main {
+    padding-left: 200px;
+  }
+}

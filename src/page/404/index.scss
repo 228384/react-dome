@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: #ffffff;
+  @include flex(center, flex-start);
+  div {
+    height: auto;
+    width: 80%;
+    max-width: 1200px;
+    padding: 6%;
+    position: relative;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  button {
+    position: absolute;
+    top: 70%;
+    left: 54%;
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transform: scale(clac(100%/800px));
+  }
+}
